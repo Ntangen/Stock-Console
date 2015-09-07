@@ -1,0 +1,21 @@
+<template name="stockTable">
+
+	<table class="table table-striped">
+	<thead>
+		<tr>
+			<th>Stock</th>
+			<th>Price</th>
+			<th>Change (%)</th>
+			<th>As of</th>
+		</tr>
+	</thead>
+	<tbody>
+		{{#each stocks}}
+		<tr>
+			{{> stockItem}}
+		</tr>
+		{{/each}}
+	</tbody>
+	</table>
+
+</template>

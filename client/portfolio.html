@@ -1,0 +1,29 @@
+<template name="portfolio">
+
+	<table class="table table-striped">
+	<thead>
+		<tr>
+			<th>Stock</th>
+			<th>Shares</th>
+			<th>Cost basis</th>
+			<th>Market value</th>
+			<th>Gain/Loss</th>
+		</tr>
+	</thead>
+	<tbody>
+		{{#each stocks}}
+		<tr>
+			{{> portItem}}
+		</tr>
+		{{/each}}
+		<tr class='success'>
+			<td>Total:</td>
+			<td></td>
+			<td>${{costbasis}}</td>			
+			<td>${{priceTotal}}</td>
+			<td>${{gainlossTotal}} ({{gainlossPctTotal}}%)</td>
+		</tr> 
+	</tbody>
+	</table>
+
+</template>

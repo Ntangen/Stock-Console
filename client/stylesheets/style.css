@@ -1,0 +1,20 @@
+* {
+	font-family: 'Work Sans', sans-serif;
+}
+
+body {
+	padding-top: 0px;
+}
+
+.page-header {
+	margin-top: 0px;
+	text-indent: 100px;
+}
+
+#navbrand {
+	margin-left: 80px;
+}
+
+#navright {
+	margin-right: 80px;
+}

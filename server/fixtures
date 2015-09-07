@@ -1,0 +1,22 @@
+if (Stocks.find().count() === 0) {
+  Stocks.insert({
+    symbol: 'GOOG',
+    price: "123",
+    change: "1",
+    asof: "Aug 15"
+  });
+
+  Stocks.insert({
+    symbol: 'AMZN',
+    price: "456",
+    change: "2",
+    asof: "Aug 16"
+  }); 
+
+  Stocks.insert({
+    symbol: 'AAPL',
+    price: "789",
+    change: "3",
+    asof: "Aug 17"
+  });
+}
