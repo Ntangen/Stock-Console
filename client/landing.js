@@ -11,7 +11,7 @@ Template.login.events({
 			});
 			$('[data-toggle="popover"]').popover('show');
 			setTimeout(function (){
-			$('[data-toggle="popover"]').popover('toggle')},(5000));
+			$('[data-toggle="popover"]').popover('destroy')},(5000));
 			}
 		});
 	$("#target").trigger('reset');
@@ -31,7 +31,7 @@ Template.login.events({
 				});
 			$('[data-toggle="popover"]').popover('show');
 			setTimeout(function (){
-				$('[data-toggle="popover"]').popover('toggle')},(5000));
+				$('[data-toggle="popover"]').popover('destroy')},(5000));
 			}
 		});  
 	$("#target").trigger('reset');

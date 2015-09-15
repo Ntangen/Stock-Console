@@ -1,6 +1,7 @@
 Template.home.events({
 	'submit': function(e) {
 	e.preventDefault();	
+	console.log("TEMP");
 	var userSymbol = $("input").val().toUpperCase();
 	if (Stocks.findOne({symbol: userSymbol})) {
 		return alert ("This stock is already listed.");
