@@ -5,19 +5,22 @@
 		<td>{{change}} ({{changePct}})</td>
 		<td>{{asof}}</td>
 		<td><a tabindex="0" role="button" type="submit" id="add" name="{{symbol}}" class="btn btn-success btn-sm" data-toggle="popover" data-placement="right">Add</a></td>
-		<td><button type="button" id="remove" class="btn btn-danger btn-sm">Remove</button>
+		<td><button type="button" id="remove" class="btn btn-danger btn-sm">Remove</button></td>
+	<!-- 
 		<div id="hidden-content" style="display: none" width="300px">
 		<form id='poptarget-{{symbol}}'>
 			<div class="form-group">
-			<label for="purchprice">What was your per-share purchase price?</label>
-			<input type="currency" class="form-control" id="purchprice" placeholder="$100">
+			<label for="purchprice">Per-share purchase price?</label>
+			<input type="currency" class="form-control" id="{{symbol}}" placeholder="$100">
 			</div>
 			<div class="form-group">
-			<label for="shares">How many shares do you own?</label>
+			<label for="shares">How many shares?</label>
 			<input type="number" class="form-control" id="shares" placeholder="10">
-			<input class="btn btn-primary" type="submit" id="gobutt" value="inputt"/>
+			<br>
+			<input class="btn btn-info" type="submit" id="gobutt" value="Click"/>
 			</div>
-		</form>
-		</div></td>
+		</form> 
+		</div>
+	-->
 
 </template>

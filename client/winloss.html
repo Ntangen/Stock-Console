@@ -1,0 +1,46 @@
+<template name="winloss">
+
+<div class="row">
+<div class="col-sm-1"></div>
+	<div class="col-sm-7">
+		<div class="panel panel-default"><div class="panel-heading">
+        <h3 class="panel-title">Post-sale tracking</h3></div>
+	        <!-- panel body -->
+	        <div class="panel-body">
+	        	<form class='form-inline'><div class='form-group'>
+	        	<label for='symbol'>Symbol</label>
+	        	<input type='text' class='form-control' id='inputSymbol' placeholder='GOOG'></div>
+	        	<div class='form-group'>
+	        		<label for='SoldPrice'>Sale Price</label>
+	        		<input type='text' class='form-control' id='soldPrice' placeholder='$50.35'></div>
+	        	<button type='submit' id="postSaleSubmit" class='btn btn-default'>Add</button></form>
+	        <div class="col-sm-1"></div>
+	        <div class="col-sm-12">
+				<table class="table table-striped">
+				<thead>
+					<tr>
+						<th>Stock</th>
+						<th>Sold Value</th>
+						<th>Current Value</th>
+						<th>Change (%)</th>
+						<th></th>
+					</tr>
+				</thead>
+				<tbody>
+					{{#each stocks}}
+					<tr>
+						{{> winItem}}
+					</tr>
+					{{/each}}
+				</tbody>
+				</table>
+			</div>
+		<!-- end panel body -->
+			</div>
+		  </div>
+<!-- main window body -->
+</div></div>
+
+<div class="col-sm-1"></div>
+
+</template>

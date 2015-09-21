@@ -18,3 +18,7 @@ body {
 #navright {
 	margin-right: 80px;
 }
+
+.popover{
+	max-width: 100%;
+}

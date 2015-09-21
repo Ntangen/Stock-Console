@@ -14,19 +14,20 @@
 
 <div class="row">
   <div class="col-sm-1"></div>
+  <!-- main window -->
   <div class="col-sm-10">
     <div class="row">
       <!-- stock table section -->
       <div class="col-xs-8 col-sm-6"> <div class="panel panel-primary"><div class="panel-heading">Stocks</div>
       <div class="panel-body">
-        <form><div class="row">
+        <form class='top-submit'><div class="row">
         <div class="col-sm-5">
           <div class="input-group">
-          <span class="input-group-addon" id="basic-addon1">Stock symbol:</span>
+          <span class="input-group-addon" id="basic-addon1">Symbol:</span>
           <input type="text" class="form-control" placeholder="GOOG" aria-describedby="basic-addon1" id="userSymbol">
           </div>
         </div>
-        <input type="submit" id="submit" value="Submit" class="btn btn-primary"/>
+        <input type="submit" id="stockSubmit" value="Submit" class="btn btn-primary"/>
         <input type="button" id="refresh" value="Refresh" class="btn btn-primary refresh"/>
         </div></form>
         <center>{{> stockTable}}</center>
@@ -43,8 +44,14 @@
         </div>
         </div>
     </div>
+  <!-- end main row -->
   </div>
-  <div class="col-sm-1">
-</div></div></div>
+<!-- main window end -->
+</div>
+<div class="col-sm-1"></div>
+<!-- end top row -->
+</div>
+
+{{> winloss}}
 
 </template>
